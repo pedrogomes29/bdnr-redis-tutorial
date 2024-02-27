@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookit!</title>
+</head>
+<body>
+    <h1>Bookit!</h1>
+    <h2>Add new bookmark</h2>
+    <form action="bookit.php" method="POST">
+        <label for="url">URL:</label>
+        <input type="url" id="url" name="url" required><br><br>
+        
+        <label for="tags">Tags (list):</label>
+        <input type="text" id="tags" name="tags" pattern="[a-zA-Z0-9 ]+" title="Only letters, numbers, and spaces are allowed" required><br><br>
+        
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
